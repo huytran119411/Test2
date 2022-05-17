@@ -1,6 +1,7 @@
-let array = []
+let n = 500
+let array = new Array(n)
 for (let i = 0; i < 500; i++) {
-    array.push[i]
+    array[i] = i
 }
 let k = 0
 for (let x = 0; x < array.length; x++) {
@@ -10,4 +11,4 @@ for (let x = 0; x < array.length; x++) {
         }
     }
 }
-document.write("Tổng của các số nguyên tố là: " + k)
+document.write("tổng các số nguyên tố nhỏ hơn 500 là : "+k)
