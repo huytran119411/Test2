@@ -3,12 +3,17 @@ let array = new Array(n)
 for (let i = 0; i < 500; i++) {
     array[i] = i
 }
-let k = 0
+let sum = 0;
+let count = 0;
 for (let x = 0; x < array.length; x++) {
-    for (let j = 2; j <= array[x]; j++) {
+    for (let j = 1; j <= array[x]; j++) {
         if (array[x] % j === 0) {
-            k = k + j
+            count += 1;
         }
     }
+    if (count === 2) {
+        sum += array[x]
+    }
+    count = 0;
 }
-document.write("tổng các số nguyên tố nhỏ hơn 500 là : "+k)
+document.write("Tổng của các số nguyên tố là: " + sum)
