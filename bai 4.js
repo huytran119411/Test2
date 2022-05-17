@@ -1,6 +1,6 @@
 let array = []
 for (let i = 0; i < 500; i++) {
-    array = array.push[i]
+    array.push[i]
 }
 let k = 0
 for (let x = 0; x < array.length; x++) {
